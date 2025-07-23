@@ -65,6 +65,7 @@ header, main{
 .banner{
   justify-content: space-between;
   align-items: end;
+  gap: 30px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
