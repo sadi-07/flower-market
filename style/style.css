@@ -144,7 +144,7 @@ header, main{
   color: rgba(0, 0, 0, 0.5);
 }
 .card-section{
-  margin: 50px auto 200px;
+  margin: 50px auto 0px;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 20px;
@@ -195,5 +195,48 @@ header, main{
   .card button{
     max-width: 100%;
     padding: 15px 0px;
+  }
+  .plants{
+    margin-bottom: 50px;
+  }
+}
+
+/* Plants Lover styles */
+
+.plants-lover{
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.plants-lover-content .title h2{
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+.plants-lover-content .sub-title{
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.plants-lover-content .sub-title ul{
+  margin-left: 35px;
+}
+.plants-lover-content .sub-title ul li{
+  margin-bottom: 20px;
+}
+
+
+/* Plants Lover responsive */
+
+@media screen and (max-width:576px) {
+  .plants-lover{
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .plants-lover-image img{
+    max-width: 100%;
+
   }
 }
