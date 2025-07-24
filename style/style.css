@@ -120,9 +120,6 @@ header, main{
 
 /* Plants styles */
 
-.plants{
-  margin-bottom: 210px;
-}
 .plants .title{
   text-align: center;
 }
@@ -185,6 +182,7 @@ header, main{
   .plants{
     max-width: 90%;
     margin: 0 auto;
+    margin-bottom: 50px;
   }
   .card-section{
     grid-template-columns: repeat(2,1fr);
@@ -196,9 +194,6 @@ header, main{
     max-width: 100%;
     padding: 15px 0px;
   }
-  .plants{
-    margin-bottom: 50px;
-  }
 }
 
 /* Plants Lover styles */
@@ -208,7 +203,12 @@ header, main{
   align-items: center;
   gap: 60px;
 }
-
+.badge-image{
+  position: relative;
+  width: 20%;
+  left: 31.25rem;
+  top: 8.125rem;
+}
 .plants-lover-content .title h2{
   font-weight: 700;
   font-size: 3.2rem;
@@ -230,6 +230,9 @@ header, main{
 /* Plants Lover responsive */
 
 @media screen and (max-width:576px) {
+  .badge-image{
+    display: none;
+  }
   .plants-lover{
     flex-direction: column;
     max-width: 90%;
