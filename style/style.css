@@ -118,7 +118,9 @@ main {
     max-width: 90%;
     margin: 0 auto;
   }
-
+  .banner-content .title h1 {
+  font-size: 2.8rem;
+  }
   .banner-image img {
     max-width: 100%;
     margin: 0 auto;
@@ -268,7 +270,9 @@ main {
     max-width: 90%;
     margin: 0 auto;
   }
-
+  .plants-lover-content .title h2{
+    font-size: 2.8rem;
+  }
   .plants-lover-image img {
     max-width: 100%;
 
@@ -499,6 +503,9 @@ main {
   .join-content{
     max-width: 90%;
     margin: 0 auto;
+  }
+  .join-content .title h1{
+    font-size: 2.2rem;
   }
 }
 
