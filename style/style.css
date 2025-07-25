@@ -321,20 +321,12 @@ main {
 }
 
 .double-div .div-1 {
-  background-image: url(./../assets/deal-bloom.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(./../assets/deal-bloom.png);
   background-repeat: no-repeat;
   border: none;
   border-radius: 15px;
-  opacity: 0.4;
   z-index: 1;
-
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-size: cover;
-  background-position: center;
-  content: "";
+  background-size: cover; 
 }
 
 .div-1-content {
@@ -346,6 +338,7 @@ main {
 .div-1-content h3 {
   font-weight: 700;
   font-size: 1.125rem;
+  margin-bottom: 20px;
 }
 
 .div-1-content a {
@@ -355,20 +348,12 @@ main {
 }
 
 .double-div .div-2 {
-  background-image: url(./../assets/deal-ana.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(./../assets/deal-ana.png);
   background-repeat: no-repeat;
   border: none;
   border-radius: 15px;
-  opacity: 0.4;
   z-index: 1;
-
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-size: cover;
-  background-position: center;
-  content: "";
 }
 
 .div-2-content {
@@ -380,6 +365,7 @@ main {
 .div-2-content h3 {
   font-weight: 700;
   font-size: 1.125rem;
+  margin-bottom: 20px;
 }
 
 .div-2-content a {
@@ -390,24 +376,16 @@ main {
 
 .latest-deals-image .single-div {
   flex:2;
-  background-image: url(./../assets/deal-zabo.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(./../assets/deal-zabo.png);
   background-repeat: no-repeat;
   border: none;
   border-radius: 15px;
-  opacity: 0.4;
   z-index: 1;
-
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-size: cover;
-  background-position: center;
-  content: "";
 }
 
 .single-div-content {
-  padding: 150px 90px 150px;
+  padding: 155px 90px;
   z-index: 2;
   color: #fff;
   position: relative;
@@ -417,6 +395,7 @@ main {
 .single-div-content h3 {
   font-weight: 700;
   font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .single-div-content a {
@@ -438,8 +417,9 @@ main {
   .double-div , .single-div{
     width: 100%;
   }
-  .single-div-content{
-    padding: 65px 0px;
+  
+  .single-div-content, .div-1-content, .div-2-content{
+    padding: 80px 0px;
   }
   .single-div-content h3{
     font-weight: 700;
@@ -518,6 +498,62 @@ main {
   }
   .join-content{
     max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Footer styles */
+
+footer{
+  margin: 50px 0px;
+}
+.sections{
+  justify-content: space-between;
+}
+.sections .logo-section{
+  max-width: 360px;
+}
+.sections .logo-section .sub-title{
+  margin-top: 15px;
+}
+.sections .logo-section .sub-title p{
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.sections .menu-1 a{
+  font-weight: 600;
+  text-decoration: none;
+  color: #6B7280;
+  font-size: 1rem;
+  margin: 15px 0px;
+  display: inline-block;
+}
+.sections .menu-2 a{
+  font-weight: 600;
+  text-decoration: none;
+  color: #6B7280;
+  font-size: 1rem;
+  margin: 15px 0px;
+  display: inline-block;
+}
+.sections .icons{
+  gap: 24px;
+  margin-top: 10px;
+}
+.sections .icons a{
+  text-decoration: none;
+}
+.sections .icons a img{
+  height: 35px;
+  width: 35px;
+}
+
+/* Footer responsive */
+
+@media screen and (max-width:576px) {
+  .sections{
+    flex-direction: column;
+    width: 90%;
     margin: 0 auto;
   }
 }
